@@ -1,0 +1,44 @@
+﻿@page
+@model Kidzplayground.Pages.Admin.Categories.IndexModel
+
+@{
+    ViewData["Title"] = "Hantera kategorier";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>Hantera Kategorier</h1>
+
+<h2>Skapa ny kategori</h2>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="NewCategory.Name" class="control-label">Namn</label>
+        <input asp-for="NewCategory.Name" class="form-control" />
+        <span asp-validation-for="NewCategory.Name" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Skapa</button>
+</form>
+
+<h2>Existerande Kategorier</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Namn</th>
+            <th>Ta bort</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var categories in Model.Category)
+        {
+            <tr>
+                <td>@categories.Name</td>
+                <td>
+                    <form method="post" asp-page-handler="Delete" asp-route-id="@categories.CategoryId">
+                        <button type="submit" class="btn btn-danger">Ta bort</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

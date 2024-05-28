@@ -1,0 +1,48 @@
+﻿@page
+@model SendMessagesModel
+
+@{
+    ViewData["Title"] = "Send Message";
+}
+
+<h2>Dina meddelanden</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Från</th>
+            <th>Meddelande</th>
+            <th>Skickat</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var message in Model.Messages)
+        {
+            <tr>
+                <td>@Model.GetUsername(message.SendFrom)</td>
+                <td>@message.Text</td>
+                <td>@message.SendDate</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h2>Skicka ett meddelande</h2>
+
+<form method="post">
+    <div>
+        <label asp-for="NewMessage.Text">Meddelande</label>
+        <textarea asp-for="NewMessage.Text" class="form-control"></textarea>
+    </div>
+    <div>
+        <label asp-for="NewMessage.SendTo">Mottagare</label>
+        <select asp-for="NewMessage.SendTo" class="form-control">
+            <option value="">Välj mottagare</option>
+            @foreach (var user in Model.Users)
+            {
+                <option value="@user.Id">@user.UserName</option>
+            }
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Skicka</button>
+</form>

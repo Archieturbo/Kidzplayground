@@ -1,0 +1,69 @@
+﻿@page
+@model Kidzplayground.Pages.Admin.ReviewModel
+@{
+    ViewData["Title"] = "Granska Flaggade Inlägg och Kommentarer";
+}
+
+<h1>Granska Flaggade Inlägg</h1>
+
+<div class="row">
+    @if (Model.FlaggedPosts != null && Model.FlaggedPosts.Any())
+    {
+        @foreach (var post in Model.FlaggedPosts.OrderByDescending(p => p.Date))
+        {
+            <div class="card m-2" style="width: 18rem">
+                <img class="card-img-top" src="~/userImages/@post.Image" alt="Post Image" />
+                <div class="card-body">
+                    <h5 class="card-title">@post.Header</h5>
+                    @if (post.Text.Length > 50)
+                    {
+                        <p class="card-text">@post.Text.Substring(0, 50)...</p>
+                    }
+                    else
+                    {
+                        <p class="card-text">@post.Text</p>
+                    }
+                    <a asp-page="/PostsDetail/PostDetails" asp-route-id="@post.Id" class="btn btn-primary">Läs mer</a>
+                    <form method="post" asp-page-handler="RemoveFlag">
+                        <input type="hidden" name="postId" value="@post.Id" />
+                        <button type="submit" class="btn btn-warning">Ta bort flagg</button>
+                    </form>
+                </div>
+                <p class="card-footer">@post.Date</p>
+            </div>
+        }
+    }
+    else
+    {
+        <p>Inga flaggade inlägg att granska.</p>
+    }
+</div>
+
+<hr />
+
+<h1>Granska Flaggade Kommentarer</h1>
+
+<div class="row">
+    @if (Model.FlaggedComments != null && Model.FlaggedComments.Any())
+    {
+        @foreach (var comment in Model.FlaggedComments)
+        {
+            <div class="card m-2" style="width: 18rem">
+                <div class="card-body">
+                    <p class="card-text">@comment.TextContent</p>
+                    <p><strong>Kommenterat av:</strong> @comment.UserEmail</p>
+                    <a asp-page="/PostsDetail/PostDetails" asp-route-id="@comment.PostId" class="btn btn-primary">Läs mer</a>
+                    <form method="post" asp-page-handler="RemoveCommentFlag">
+                        <input type="hidden" name="commentId" value="@comment.Id" />
+                        <button type="submit" class="btn btn-warning">Ta bort flagg</button>
+                    </form>
+                </div>
+                <p class="card-footer">@comment.Date</p>
+            </div>
+        }
+    }
+    else
+    {
+        <p>Inga flaggade kommentarer att granska.</p>
+    }
+</div>

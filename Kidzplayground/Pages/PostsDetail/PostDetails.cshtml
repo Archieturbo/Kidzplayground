@@ -1,0 +1,78 @@
+﻿@page "{id:int}"
+@using System.Security.Claims
+@model Kidzplayground.Pages.Posts.PostDetailsModel
+
+@{
+    ViewData["Title"] = "PostDetails";
+    var profileImageUrl = string.IsNullOrEmpty(Model.Post?.UserProfileImage)
+        ? Url.Content("~/Images/default-profile.png")
+        : Url.Content($"~/ProfileImage/{Model.Post.UserProfileImage}");
+}
+
+<h1>@Model.Post?.Header</h1>
+<p>@Model.Post?.Text</p>
+<img src="~/userImages/@Model.Post?.Image" alt="Post Image" class="img-thumbnail img-fluid w-50" />
+<p><strong>Upplagt av:</strong> @Model.Post.UserEmail</p>
+<img src="@profileImageUrl" alt="User Profile Image" style="width:80px; height:50px; border-radius:10px;" />
+<p><strong>Upplagt:</strong> @Model.Post?.Date</p>
+
+@if (TempData["Message"] != null)
+{
+    <div id="notification" class="alert alert-success">@TempData["Message"]</div>
+}
+
+@if (User.Identity.IsAuthenticated)
+{
+    <form method="post" asp-page-handler="FlagPost">
+        <input type="hidden" name="postId" value="@Model.Post.Id" />
+        <button type="submit">Rapportera inlägget </button>
+    </form>
+}
+
+<hr />
+
+@if (Model.Comments != null && Model.Comments.Any())
+{
+    <h2>Kommentarer</h2>
+    @foreach (var comment in Model.Comments)
+    {
+        <div>
+            <img src="~/ProfileImage/@comment.UserProfileImage" alt="User Profile Image" style="width:80px; height:50px; border-radius:10px;" />
+            <p>@comment.TextContent</p>
+            <p><strong>Kommenterat av:</strong> @comment.UserEmail</p>
+            <p><strong>Upplagt:</strong> @comment.Date</p>
+
+            @if (User.Identity.IsAuthenticated)
+            {
+                <form method="post" asp-page-handler="FlagComment">
+                    <input type="hidden" name="commentId" value="@comment.Id" />
+                    <button type="submit">Rapportera kommentaren</button>
+                </form>
+            }
+            @if (User.Identity.IsAuthenticated && (User.FindFirstValue(ClaimTypes.NameIdentifier) == comment.UserId || User.IsInRole("Admin")))
+            {
+                <a asp-page="./PostDetails" asp-route-id="@Model.Post.Id" asp-route-deleteComment="@comment.Id" class="btn btn-primary">Ta bort</a>
+            }
+            <hr />
+        </div>
+    }
+}
+else
+{
+    <p>Inga kommentarer till denna post än.</p>
+}
+
+@if (User.Identity.IsAuthenticated)
+{
+    <form method="post">
+        <input type="hidden" asp-for="NewComment.PostId" value="@Model.Post.Id" />
+        <div>
+            <textarea asp-for="NewComment.TextContent"></textarea>
+        </div>
+        <button type="submit">Lägg till en kommentar</button>
+    </form>
+}
+else
+{
+    <p class="alert-info">Du måste vara inloggad för att kommentera.</p>
+}

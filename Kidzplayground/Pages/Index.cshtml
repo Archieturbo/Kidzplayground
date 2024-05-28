@@ -1,0 +1,117 @@
+﻿@page "{categoryId:int?}"
+@model IndexModel
+@inject SignInManager<KidzplaygroundUser> SignInManager
+@inject UserManager<KidzplaygroundUser> UserManager
+@using Microsoft.AspNetCore.Identity
+@using Kidzplayground.Areas.Identity.Data
+@{
+    Layout = "_layout";
+    ViewData["Title"] = "Index";
+    var user = await UserManager.GetUserAsync(User);
+}
+
+@if (Model.CategoryId == null || Model.CategoryId == 0)
+{
+    <div>
+        <h1>Välkommen till Kidzplayground</h1>
+    </div>
+}
+<div>
+    <select onchange="location.href = this.value;">
+        <option value="/Index">-- Välj kategori --</option>
+        <option value="/Index?categoryId=0">Alla inlägg</option>
+        @if (Model.Categories != null)
+        {
+            @foreach (var category in Model.Categories)
+            {
+                <option value="/Index?categoryId=@category.CategoryId">@category.Name</option>
+            }
+        }
+    </select>
+</div>
+
+<div class="text-center">
+    <h1 class="display-4">
+        @if (Model.CategoryId == null )
+        {
+            <h2>Nya inlägg</h2>
+        }
+        else if (Model.CategoryId == 0)
+        {
+            <h2>Alla inlägg</h2>
+        }
+        else
+        {
+            @Model.SelectedCategoryName
+        }
+    </h1>
+    <hr />
+</div>
+
+<div class="row">
+    @if (Model.Posts != null && Model.Posts.Any())
+    {
+        @foreach (var post in Model.Posts.OrderByDescending(p => p.Date))
+        {
+            <div class="card m-2" style="width: 18rem">
+                <img class="card-img-top" src="~/userImages/@post.Image" />
+                <div class="card-body">
+                    <h5 class="card-title">@post.Header</h5>
+                    @if (post.Text.Length > 50)
+                    {
+                        <p class="card-text">@post.Text.Substring(0, 50)...</p>
+                    }
+                    else
+                    {
+                        <p class="card-text">@post.Text</p>
+                    }
+                    <a asp-page="/PostsDetail/PostDetails" asp-route-id="@post.Id" class="btn btn-primary">Läs mer & kommentera</a>
+                    @if (user != null && user.Id == post.UserId || User.IsInRole("Admin"))
+                    {
+                        <a asp-route-deleteId="@post.Id" class="btn btn-primary">Ta bort</a>
+                    }
+                </div>
+                <p class="card-footer">@post.Date</p>
+            </div>
+        }
+    }
+</div>
+
+<hr />
+
+<h2>Skapa ett nytt inlägg:</h2>
+@if (SignInManager.IsSignedIn(User))
+{
+    <form method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label asp-for="Post.Header">Titel</label>
+            <input asp-for="Post.Header" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Post.Text">Text</label>
+            <textarea asp-for="Post.Text" class="form-control" rows="5"></textarea>
+        </div>
+        <div class="form-group">
+            <label asp-for="Post.CategoryId">Kategori</label>
+            <select asp-for="Post.CategoryId" class="form-control">
+                <option value="">Välj en kategori</option>
+                @if (Model.Categories != null)
+                {
+                    @foreach (var category in Model.Categories)
+                    {
+                        <option value="@category.CategoryId">@category.Name</option>
+                    }
+                }
+            </select>
+        </div>
+        <div class="form-group">
+            <label asp-for="UploadedImage">Bild</label>
+            <input type="file" name="UploadedImage" class="form-control-file" />
+        </div>
+        <button type="submit" class="btn btn-success">Spara inlägg</button>
+    </form>
+}
+else
+{
+    <div class="alert alert-danger">Logga in för att skapa ett inlägg!</div>
+}

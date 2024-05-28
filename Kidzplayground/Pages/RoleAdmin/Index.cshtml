@@ -1,0 +1,43 @@
+﻿@page
+@model Kidzplayground.Pages.RoleAdmin.IndexModel
+@{
+    Layout = "_layout";
+}
+<table class="table">
+    <tr>
+
+        <th>Användarnamn</th>
+        @foreach(var role in Model.Roles)
+        {
+            <th>@role.Name</th>
+        }
+
+    </tr>
+    @foreach(var user in Model.Users)
+    {
+        <tr>
+            <td>@user.UserName</td>
+            
+          @foreach(var role in Model.Roles)
+          {
+              if(await Model._userManager.IsInRoleAsync(user, role.Name))
+              {
+                    <td><a href="?RemoveUserId=@user.Id&RoleName=@role.Name">Ja</a></td>
+              }
+              else
+              {
+                    <td><a href="?AddUserId=@user.Id&RoleName=@role.Name">Nej</a></td>
+              }
+          }
+
+        </tr>
+    }
+
+</table>
+
+<form method="post">
+    <label for="RoleName">Ny roll</label>
+    <input name="RoleName" id="RoleName" />
+    <input type="submit" value="Skapa ny roll" />
+
+</form>
