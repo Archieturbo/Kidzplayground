@@ -41,7 +41,7 @@ namespace Kidzplayground.Pages.Admin.Messages
                 return;
             }
 
-            var messages = await _context.Messages
+            var messages = await _context.Messages //Hämta meddelanden riktade till den aktuella användaren
                 .Where(m => m.SendTo == userId)
                 .ToListAsync();
 
@@ -62,10 +62,10 @@ namespace Kidzplayground.Pages.Admin.Messages
             NewMessage.SendFrom = userId;
             NewMessage.SendDate = DateTime.Now;
 
-            _context.Messages.Add(NewMessage);
+            _context.Messages.Add(NewMessage); //Spara det nya meddelandet i databasen
             await _context.SaveChangesAsync();
 
-            Messages = await _context.Messages
+            Messages = await _context.Messages //Hämta och spara meddelanden för den aktuella användaren efter att det nya meddelandet har lagts till
                 .Where(m => m.SendTo == userId)
                 .OrderByDescending(m => m.SendDate)
                 .ToListAsync();

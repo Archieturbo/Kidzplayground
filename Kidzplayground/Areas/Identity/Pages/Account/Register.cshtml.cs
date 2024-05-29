@@ -140,7 +140,7 @@ namespace Kidzplayground.Areas.Identity.Pages.Account
 
                 var image = Input.ProfilePicture;
 
-                var result = await _userManager.CreateAsync(user, Input.Password);
+                var result = await _userManager.CreateAsync(user, Input.Password); //Skapa användare med lösenord samt profilbild
                 if (image != null)
                 {
                     var uniqueFileName = Guid.NewGuid().ToString() + Path.GetExtension(image.FileName);
@@ -153,7 +153,7 @@ namespace Kidzplayground.Areas.Identity.Pages.Account
                 }
                 else
                 {
-                    user.ProfileImage = "default-profile.png";
+                    user.ProfileImage = "default-profile.png";//Lägger användaren inte in en profilbild så får den en "default" bild
                 }
 
                
@@ -163,7 +163,7 @@ namespace Kidzplayground.Areas.Identity.Pages.Account
                 {
                     _logger.LogInformation("User created a new account with password.");
 
-                    await _userManager.AddToRoleAsync(user, "User");
+                    await _userManager.AddToRoleAsync(user, "User"); //Lägger till användaren som "User" default
                     var isAdmin = await _userManager.IsInRoleAsync(user, "Admin");
                     user.IsAdmin = isAdmin;
                     await _userManager.UpdateAsync(user);

@@ -24,18 +24,18 @@ namespace Kidzplayground.Pages.Admin
 
         public async Task OnGetAsync()
         {
-            FlaggedPosts = await _context.Post
+            FlaggedPosts = await _context.Post //Hämtar alla flaggade inlägg
                 .Where(p => p.IsFlagged)
                 .OrderByDescending(p => p.Date)
                 .ToListAsync();
 
-            FlaggedComments = await _context.Comment
+            FlaggedComments = await _context.Comment //Hämtar alla flaggade kommentarer
                 .Where(c => c.IsFlagged)
                 .OrderByDescending(c => c.Date)
                 .ToListAsync();
         }
 
-        public async Task<IActionResult> OnPostRemoveFlagAsync(int postId)
+        public async Task<IActionResult> OnPostRemoveFlagAsync(int postId) //Metod för att ta bort flaggade inlägg
         {
             var post = await _context.Post.FindAsync(postId);
             if (post == null)
@@ -48,7 +48,7 @@ namespace Kidzplayground.Pages.Admin
             return RedirectToPage();
         }
 
-        public async Task<IActionResult> OnPostRemoveCommentFlagAsync(int commentId)
+        public async Task<IActionResult> OnPostRemoveCommentFlagAsync(int commentId) //Metod för att ta bort flaggade kommentarer
         {
             var comment = await _context.Comment.FindAsync(commentId);
             if (comment == null)

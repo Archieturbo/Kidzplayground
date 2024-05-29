@@ -3,20 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\Archie\\OneDrive\\Systemutveckling.NET\\Systemutveckling.NET\\Kidzplayground\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6DB66A0A-885A-424C-8C51-23E4FDDD6E98}|Kidzplayground\\Kidzplayground.csproj|c:\\users\\archie\\onedrive\\systemutveckling.net\\systemutveckling.net\\kidzplayground\\kidzplayground\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DB66A0A-885A-424C-8C51-23E4FDDD6E98}|Kidzplayground\\Kidzplayground.csproj|solutionrelative:kidzplayground\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6DB66A0A-885A-424C-8C51-23E4FDDD6E98}|Kidzplayground\\Kidzplayground.csproj|c:\\users\\archie\\onedrive\\systemutveckling.net\\systemutveckling.net\\kidzplayground\\kidzplayground\\pages\\roleadmin\\reviews\\review.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DB66A0A-885A-424C-8C51-23E4FDDD6E98}|Kidzplayground\\Kidzplayground.csproj|solutionrelative:kidzplayground\\pages\\roleadmin\\reviews\\review.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DB66A0A-885A-424C-8C51-23E4FDDD6E98}|Kidzplayground\\Kidzplayground.csproj|c:\\users\\archie\\onedrive\\systemutveckling.net\\systemutveckling.net\\kidzplayground\\kidzplayground\\pages\\roleadmin\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DB66A0A-885A-424C-8C51-23E4FDDD6E98}|Kidzplayground\\Kidzplayground.csproj|solutionrelative:kidzplayground\\pages\\roleadmin\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DB66A0A-885A-424C-8C51-23E4FDDD6E98}|Kidzplayground\\Kidzplayground.csproj|c:\\users\\archie\\onedrive\\systemutveckling.net\\systemutveckling.net\\kidzplayground\\kidzplayground\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DB66A0A-885A-424C-8C51-23E4FDDD6E98}|Kidzplayground\\Kidzplayground.csproj|solutionrelative:kidzplayground\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6DB66A0A-885A-424C-8C51-23E4FDDD6E98}|Kidzplayground\\Kidzplayground.csproj|c:\\users\\archie\\onedrive\\systemutveckling.net\\systemutveckling.net\\kidzplayground\\kidzplayground\\dal\\datamanagerapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6DB66A0A-885A-424C-8C51-23E4FDDD6E98}|Kidzplayground\\Kidzplayground.csproj|solutionrelative:kidzplayground\\dal\\datamanagerapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{6DB66A0A-885A-424C-8C51-23E4FDDD6E98}|Kidzplayground\\Kidzplayground.csproj|c:\\users\\archie\\onedrive\\systemutveckling.net\\systemutveckling.net\\kidzplayground\\kidzplayground\\pages\\admin\\categories\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DB66A0A-885A-424C-8C51-23E4FDDD6E98}|Kidzplayground\\Kidzplayground.csproj|solutionrelative:kidzplayground\\pages\\admin\\categories\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DB66A0A-885A-424C-8C51-23E4FDDD6E98}|Kidzplayground\\Kidzplayground.csproj|c:\\users\\archie\\onedrive\\systemutveckling.net\\systemutveckling.net\\kidzplayground\\kidzplayground\\pages\\admin\\messages\\sendmessages.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DB66A0A-885A-424C-8C51-23E4FDDD6E98}|Kidzplayground\\Kidzplayground.csproj|solutionrelative:kidzplayground\\pages\\admin\\messages\\sendmessages.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6DB66A0A-885A-424C-8C51-23E4FDDD6E98}|Kidzplayground\\Kidzplayground.csproj|c:\\users\\archie\\onedrive\\systemutveckling.net\\systemutveckling.net\\kidzplayground\\kidzplayground\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6DB66A0A-885A-424C-8C51-23E4FDDD6E98}|Kidzplayground\\Kidzplayground.csproj|solutionrelative:kidzplayground\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6DB66A0A-885A-424C-8C51-23E4FDDD6E98}|Kidzplayground\\Kidzplayground.csproj|c:\\users\\archie\\onedrive\\systemutveckling.net\\systemutveckling.net\\kidzplayground\\kidzplayground\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DB66A0A-885A-424C-8C51-23E4FDDD6E98}|Kidzplayground\\Kidzplayground.csproj|solutionrelative:kidzplayground\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6DB66A0A-885A-424C-8C51-23E4FDDD6E98}|Kidzplayground\\Kidzplayground.csproj|c:\\users\\archie\\onedrive\\systemutveckling.net\\systemutveckling.net\\kidzplayground\\kidzplayground\\pages\\postsdetail\\postdetails.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DB66A0A-885A-424C-8C51-23E4FDDD6E98}|Kidzplayground\\Kidzplayground.csproj|solutionrelative:kidzplayground\\pages\\postsdetail\\postdetails.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DB66A0A-885A-424C-8C51-23E4FDDD6E98}|Kidzplayground\\Kidzplayground.csproj|c:\\users\\archie\\onedrive\\systemutveckling.net\\systemutveckling.net\\kidzplayground\\kidzplayground\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DB66A0A-885A-424C-8C51-23E4FDDD6E98}|Kidzplayground\\Kidzplayground.csproj|solutionrelative:kidzplayground\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,15 +46,80 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Review.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Archie\\OneDrive\\Systemutveckling.NET\\Systemutveckling.NET\\Kidzplayground\\Kidzplayground\\Pages\\RoleAdmin\\Reviews\\Review.cshtml.cs",
+              "RelativeDocumentMoniker": "Kidzplayground\\Pages\\RoleAdmin\\Reviews\\Review.cshtml.cs",
+              "ToolTip": "C:\\Users\\Archie\\OneDrive\\Systemutveckling.NET\\Systemutveckling.NET\\Kidzplayground\\Kidzplayground\\Pages\\RoleAdmin\\Reviews\\Review.cshtml.cs",
+              "RelativeToolTip": "Kidzplayground\\Pages\\RoleAdmin\\Reviews\\Review.cshtml.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAA5wDIAAACBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T07:49:15.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Archie\\OneDrive\\Systemutveckling.NET\\Systemutveckling.NET\\Kidzplayground\\Kidzplayground\\Pages\\RoleAdmin\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Kidzplayground\\Pages\\RoleAdmin\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\Archie\\OneDrive\\Systemutveckling.NET\\Systemutveckling.NET\\Kidzplayground\\Kidzplayground\\Pages\\RoleAdmin\\Index.cshtml.cs",
+              "RelativeToolTip": "Kidzplayground\\Pages\\RoleAdmin\\Index.cshtml.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAuwDMAAACHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T07:40:38.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Archie\\OneDrive\\Systemutveckling.NET\\Systemutveckling.NET\\Kidzplayground\\Kidzplayground\\Pages\\Admin\\Categories\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Kidzplayground\\Pages\\Admin\\Categories\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\Archie\\OneDrive\\Systemutveckling.NET\\Systemutveckling.NET\\Kidzplayground\\Kidzplayground\\Pages\\Admin\\Categories\\Index.cshtml.cs",
+              "RelativeToolTip": "Kidzplayground\\Pages\\Admin\\Categories\\Index.cshtml.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAIwDMAAABoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T07:36:46.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SendMessages.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Archie\\OneDrive\\Systemutveckling.NET\\Systemutveckling.NET\\Kidzplayground\\Kidzplayground\\Pages\\Admin\\Messages\\SendMessages.cshtml.cs",
+              "RelativeDocumentMoniker": "Kidzplayground\\Pages\\Admin\\Messages\\SendMessages.cshtml.cs",
+              "ToolTip": "C:\\Users\\Archie\\OneDrive\\Systemutveckling.NET\\Systemutveckling.NET\\Kidzplayground\\Kidzplayground\\Pages\\Admin\\Messages\\SendMessages.cshtml.cs",
+              "RelativeToolTip": "Kidzplayground\\Pages\\Admin\\Messages\\SendMessages.cshtml.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAowEQAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T07:33:12.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PostDetails.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Archie\\OneDrive\\Systemutveckling.NET\\Systemutveckling.NET\\Kidzplayground\\Kidzplayground\\Pages\\PostsDetail\\PostDetails.cshtml.cs",
+              "RelativeDocumentMoniker": "Kidzplayground\\Pages\\PostsDetail\\PostDetails.cshtml.cs",
+              "ToolTip": "C:\\Users\\Archie\\OneDrive\\Systemutveckling.NET\\Systemutveckling.NET\\Kidzplayground\\Kidzplayground\\Pages\\PostsDetail\\PostDetails.cshtml.cs",
+              "RelativeToolTip": "Kidzplayground\\Pages\\PostsDetail\\PostDetails.cshtml.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAswGEAAAB7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T07:07:10.694Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "DataManagerAPI.cs",
               "DocumentMoniker": "C:\\Users\\Archie\\OneDrive\\Systemutveckling.NET\\Systemutveckling.NET\\Kidzplayground\\Kidzplayground\\DAL\\DataManagerAPI.cs",
               "RelativeDocumentMoniker": "Kidzplayground\\DAL\\DataManagerAPI.cs",
@@ -47,20 +132,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Archie\\OneDrive\\Systemutveckling.NET\\Systemutveckling.NET\\Kidzplayground\\Kidzplayground\\Pages\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Kidzplayground\\Pages\\Index.cshtml.cs",
               "ToolTip": "C:\\Users\\Archie\\OneDrive\\Systemutveckling.NET\\Systemutveckling.NET\\Kidzplayground\\Kidzplayground\\Pages\\Index.cshtml.cs",
               "RelativeToolTip": "Kidzplayground\\Pages\\Index.cshtml.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAA5wCMAAAAAAAAA",
+              "ViewState": "AQIAAFIAAAAAAAAAAAAYwFcAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-28T09:34:31.362Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Users\\Archie\\OneDrive\\Systemutveckling.NET\\Systemutveckling.NET\\Kidzplayground\\Kidzplayground\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "Kidzplayground\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
@@ -73,13 +158,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Register.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Archie\\OneDrive\\Systemutveckling.NET\\Systemutveckling.NET\\Kidzplayground\\Kidzplayground\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "RelativeDocumentMoniker": "Kidzplayground\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "ToolTip": "C:\\Users\\Archie\\OneDrive\\Systemutveckling.NET\\Systemutveckling.NET\\Kidzplayground\\Kidzplayground\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "RelativeToolTip": "Kidzplayground\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "ViewState": "AQIAAK4AAAAAAAAAAAAiwJwAAAARAAAA",
+              "ViewState": "AQIAAH8AAAAAAAAAAAAgwKUAAABwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-28T07:54:03.919Z",
               "EditorCaption": ""

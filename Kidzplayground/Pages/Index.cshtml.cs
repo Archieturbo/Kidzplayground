@@ -49,7 +49,7 @@ namespace Kidzplayground.Pages
         {
             Categories = await DataManagerAPI.GetCategories(); //Hämtar kategorier via API
 
-            if (deleteId.HasValue)
+            if (deleteId.HasValue) //Raderar inlägg om det finns
             {
                 Models.Post postToBeDeleted = await _context.Post.FindAsync(deleteId.Value);
 
@@ -64,7 +64,7 @@ namespace Kidzplayground.Pages
                 }
             }
 
-            if (CategoryId.HasValue)
+            if (CategoryId.HasValue) //Hämta inlägg baserat på kategori
             {
                 if (CategoryId.Value == 0)
                 {
@@ -90,7 +90,7 @@ namespace Kidzplayground.Pages
             var image = UploadedImage;
             string fileName = "";
 
-            if (image != null)
+            if (image != null) //Spara uppladdad bild om den finns tillgänglig
             {
                 Random rnd = new Random();
                 fileName = rnd.Next(0, 100000).ToString() + image.FileName;
@@ -105,7 +105,7 @@ namespace Kidzplayground.Pages
             Post.UserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             _context.Post.Add(Post);
 
-            await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();//Sparar det nya inlägget i databasen
 
             return RedirectToPage();
         }

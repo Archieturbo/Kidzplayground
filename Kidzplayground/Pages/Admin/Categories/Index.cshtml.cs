@@ -39,7 +39,7 @@ namespace Kidzplayground.Pages.Admin.Categories
                 return Page();
             }
 
-            _context.Categories.Add(NewCategory);
+            _context.Categories.Add(NewCategory); //Sparar den nya kategorien i databasen
             await _context.SaveChangesAsync();
 
             return RedirectToPage();
@@ -49,7 +49,7 @@ namespace Kidzplayground.Pages.Admin.Categories
             var category = await _context.Categories.FindAsync(id);
             if (category != null)
             {
-                _context.Categories.Remove(category);
+                _context.Categories.Remove(category); //Tar bort den specifika kategorien från databasen
                 await _context.SaveChangesAsync();
             }
 

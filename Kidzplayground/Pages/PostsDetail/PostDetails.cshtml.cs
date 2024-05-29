@@ -28,7 +28,7 @@ namespace Kidzplayground.Pages.Posts
 
         public async Task<IActionResult> OnGetAsync(int id, int? deleteComment)
         {
-            if (deleteComment.HasValue)
+            if (deleteComment.HasValue)     //Radera kommentarer
             {
                 Models.Comment commentToBeDeleted = await _context.Comment.FindAsync(deleteComment.Value);
                 if (commentToBeDeleted != null)
@@ -38,13 +38,13 @@ namespace Kidzplayground.Pages.Posts
                 }
             }
 
-            Post = await _context.Post.Include(p => p.Comments).FirstOrDefaultAsync(p => p.Id == id);
+            Post = await _context.Post.Include(p => p.Comments).FirstOrDefaultAsync(p => p.Id == id); //Hämtar detaljer om inlägget inklusive kommentarer
             if (Post == null)
             {
                 return NotFound();
             }
 
-            var userpost = await _context.Users.FirstOrDefaultAsync(u => u.Id == Post.UserId);
+            var userpost = await _context.Users.FirstOrDefaultAsync(u => u.Id == Post.UserId); //Hämtar information om inläggets författare
             if (userpost != null)
             {
                 Post.UserEmail = userpost.Email;
@@ -54,7 +54,7 @@ namespace Kidzplayground.Pages.Posts
 
             foreach (var comment in Post.Comments)
             {
-                var user = await _context.Users.FirstOrDefaultAsync(u => u.Id == comment.UserId);
+                var user = await _context.Users.FirstOrDefaultAsync(u => u.Id == comment.UserId); //Hämtar information om kommentaren
                 if (user != null)
                 {
                     comment.UserEmail = user.Email;
@@ -62,7 +62,7 @@ namespace Kidzplayground.Pages.Posts
                 }
             }
 
-            Comments = Post?.Comments ?? new List<Comment>();
+            Comments = Post?.Comments ?? new List<Comment>(); //Hämtar kommentarer eller en tom lista
             return Page();
         }
 
@@ -77,12 +77,12 @@ namespace Kidzplayground.Pages.Posts
             NewComment.UserId = userId;
             NewComment.Date = DateTime.Now;
 
-            _context.Comment.Add(NewComment);
+            _context.Comment.Add(NewComment); //Lägg till nya kommentaren i databasen
             await _context.SaveChangesAsync();
-            return RedirectToPage(new { id = NewComment.PostId });
+            return RedirectToPage(new { id = NewComment.PostId }); //Returnerar till uppdaterade sidan med nya kommentaren
         }
 
-        public async Task<IActionResult> OnPostFlagPostAsync(int postId)
+        public async Task<IActionResult> OnPostFlagPostAsync(int postId) //Hanterar funktionen att flagga inlägg
         {
             var post = await _context.Post.FindAsync(postId); 
             if (post == null)
@@ -95,7 +95,7 @@ namespace Kidzplayground.Pages.Posts
             return RedirectToPage(); 
         }
 
-        public async Task<IActionResult> OnPostFlagCommentAsync(int commentId)
+        public async Task<IActionResult> OnPostFlagCommentAsync(int commentId) //Hanterar funktionen att flagga kommentarer
         {
             var comment = await _context.Comment.FindAsync(commentId); 
             if (comment == null)

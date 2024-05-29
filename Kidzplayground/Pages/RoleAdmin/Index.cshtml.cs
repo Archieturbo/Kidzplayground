@@ -32,7 +32,7 @@ namespace Kidzplayground.Pages.RoleAdmin
         }
         public async Task OnGetAsync()
         {
-            Roles = await _roleManager.Roles.ToListAsync();
+            Roles = await _roleManager.Roles.ToListAsync(); //Hämtar alla roller och användare från databasen
             Users = await _userManager.Users.ToListAsync();
 
             if(AddUserId !=null)
@@ -49,7 +49,7 @@ namespace Kidzplayground.Pages.RoleAdmin
                 await UpdateIsAdminAsync(alterUser);
             }
 
-            var currentUser = await _userManager.GetUserAsync(User);
+            var currentUser = await _userManager.GetUserAsync(User); //Kolla om den aktuella användaren är vanlig användare eller admin
             if(currentUser != null)
             {
                 IsUser = await _userManager.IsInRoleAsync(currentUser, "User");
@@ -57,7 +57,7 @@ namespace Kidzplayground.Pages.RoleAdmin
                 
             }
         }
-        private async Task UpdateIsAdminAsync(Areas.Identity.Data.KidzplaygroundUser user)
+        private async Task UpdateIsAdminAsync(Areas.Identity.Data.KidzplaygroundUser user) //Metod för att uppdatera om användaren är Admin baserat på deras roll
         {
             var isAdmin = await _userManager.IsInRoleAsync(user, "Admin");
             user.IsAdmin = isAdmin;
@@ -73,7 +73,7 @@ namespace Kidzplayground.Pages.RoleAdmin
             return RedirectToPage("./Index");
         }
 
-        public async Task CreateRole(string roleName)
+        public async Task CreateRole(string roleName) //Metod för att skapa en ny roll om den inte redan finns
         {
             bool roleExist = await _roleManager.RoleExistsAsync(roleName);
             if (!roleExist)
