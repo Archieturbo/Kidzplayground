@@ -37,7 +37,7 @@ namespace Kidzplayground.Pages.Admin.Messages
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             if (userId == null)
             {
-                _logger.LogError("User ID is null");
+                
                 return;
             }
 
