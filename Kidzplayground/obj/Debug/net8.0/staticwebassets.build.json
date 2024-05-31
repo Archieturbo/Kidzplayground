@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6QSrZguzw0scX9YB5zySSnuECpjqtseDKsjMdR8xvqQ=",
+  "Hash": "x3LgyUnSrRpMz3BvZccTub+pYMv3zgvMQ0mcBsegiGI=",
   "Source": "Kidzplayground",
   "BasePath": "_content/Kidzplayground",
   "Mode": "Default",
@@ -2487,6 +2487,25 @@
       "OriginalItemSpec": "wwwroot\\ProfileImage\\50e799dd-d66e-471a-9bf2-dc86776cae2a.jpg"
     },
     {
+      "Identity": "C:\\Users\\Archie\\OneDrive\\Systemutveckling.NET\\Systemutveckling.NET\\Kidzplayground\\Kidzplayground\\wwwroot\\ProfileImage\\57e90149-b97a-411f-9e23-5d8e9121c69b.jpg",
+      "SourceId": "Kidzplayground",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Archie\\OneDrive\\Systemutveckling.NET\\Systemutveckling.NET\\Kidzplayground\\Kidzplayground\\wwwroot\\",
+      "BasePath": "_content/Kidzplayground",
+      "RelativePath": "ProfileImage/57e90149-b97a-411f-9e23-5d8e9121c69b.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProfileImage\\57e90149-b97a-411f-9e23-5d8e9121c69b.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Archie\\OneDrive\\Systemutveckling.NET\\Systemutveckling.NET\\Kidzplayground\\Kidzplayground\\wwwroot\\ProfileImage\\64ffbb45-452c-4a63-b293-1906bf1ed648.jpg",
       "SourceId": "Kidzplayground",
       "SourceType": "Discovered",
@@ -2504,6 +2523,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\ProfileImage\\64ffbb45-452c-4a63-b293-1906bf1ed648.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Archie\\OneDrive\\Systemutveckling.NET\\Systemutveckling.NET\\Kidzplayground\\Kidzplayground\\wwwroot\\ProfileImage\\8c0f7717-6895-41ca-a268-21bacd8eefec.jpg",
+      "SourceId": "Kidzplayground",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Archie\\OneDrive\\Systemutveckling.NET\\Systemutveckling.NET\\Kidzplayground\\Kidzplayground\\wwwroot\\",
+      "BasePath": "_content/Kidzplayground",
+      "RelativePath": "ProfileImage/8c0f7717-6895-41ca-a268-21bacd8eefec.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProfileImage\\8c0f7717-6895-41ca-a268-21bacd8eefec.jpg"
     },
     {
       "Identity": "C:\\Users\\Archie\\OneDrive\\Systemutveckling.NET\\Systemutveckling.NET\\Kidzplayground\\Kidzplayground\\wwwroot\\ProfileImage\\8f23c0b0-a55a-4492-bec2-ab9d61f6ac39.jpg",

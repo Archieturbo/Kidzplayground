@@ -4,7 +4,7 @@ namespace Kidzplayground.DAL
 {
     public class DataManagerAPI
     {
-        private static Uri BaseAddress = new Uri("https://localhost:44357/");
+        private static Uri BaseAddress = new Uri("https://kidzplaygroundapi.azurewebsites.net/");
 
         public static async Task<List<Models.Category>> GetCategories()
         {
