@@ -301,62 +301,6 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "C:\\Users\\Archie\\OneDrive\\Systemutveckling.NET\\Systemutveckling.NET\\Kidzplayground\\Kidzplayground\\wwwroot\\userImages\\16148playground-7925455_640.jpg",
-      "PackagePath": "staticwebassets\\userImages\\16148playground-7925455_640.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Archie\\OneDrive\\Systemutveckling.NET\\Systemutveckling.NET\\Kidzplayground\\Kidzplayground\\wwwroot\\userImages\\18235playground-1051219_1280.jpg",
-      "PackagePath": "staticwebassets\\userImages\\18235playground-1051219_1280.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Archie\\OneDrive\\Systemutveckling.NET\\Systemutveckling.NET\\Kidzplayground\\Kidzplayground\\wwwroot\\userImages\\52645kindergarten-1322559_1280.jpg",
-      "PackagePath": "staticwebassets\\userImages\\52645kindergarten-1322559_1280.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Archie\\OneDrive\\Systemutveckling.NET\\Systemutveckling.NET\\Kidzplayground\\Kidzplayground\\wwwroot\\userImages\\53707playground-7925455_640.jpg",
-      "PackagePath": "staticwebassets\\userImages\\53707playground-7925455_640.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Archie\\OneDrive\\Systemutveckling.NET\\Systemutveckling.NET\\Kidzplayground\\Kidzplayground\\wwwroot\\userImages\\54146playground-7300196_1280.png",
-      "PackagePath": "staticwebassets\\userImages\\54146playground-7300196_1280.png"
-    },
-    {
-      "Id": "C:\\Users\\Archie\\OneDrive\\Systemutveckling.NET\\Systemutveckling.NET\\Kidzplayground\\Kidzplayground\\wwwroot\\userImages\\58220playground-7925455_640.jpg",
-      "PackagePath": "staticwebassets\\userImages\\58220playground-7925455_640.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Archie\\OneDrive\\Systemutveckling.NET\\Systemutveckling.NET\\Kidzplayground\\Kidzplayground\\wwwroot\\userImages\\5907playground-1051219_1280.jpg",
-      "PackagePath": "staticwebassets\\userImages\\5907playground-1051219_1280.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Archie\\OneDrive\\Systemutveckling.NET\\Systemutveckling.NET\\Kidzplayground\\Kidzplayground\\wwwroot\\userImages\\65977playground-99509_1280.jpg",
-      "PackagePath": "staticwebassets\\userImages\\65977playground-99509_1280.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Archie\\OneDrive\\Systemutveckling.NET\\Systemutveckling.NET\\Kidzplayground\\Kidzplayground\\wwwroot\\userImages\\71627playground-7300196_1280.png",
-      "PackagePath": "staticwebassets\\userImages\\71627playground-7300196_1280.png"
-    },
-    {
-      "Id": "C:\\Users\\Archie\\OneDrive\\Systemutveckling.NET\\Systemutveckling.NET\\Kidzplayground\\Kidzplayground\\wwwroot\\userImages\\73855children-playing-334531_1280.jpg",
-      "PackagePath": "staticwebassets\\userImages\\73855children-playing-334531_1280.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Archie\\OneDrive\\Systemutveckling.NET\\Systemutveckling.NET\\Kidzplayground\\Kidzplayground\\wwwroot\\userImages\\78869playground-99509_1280.jpg",
-      "PackagePath": "staticwebassets\\userImages\\78869playground-99509_1280.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Archie\\OneDrive\\Systemutveckling.NET\\Systemutveckling.NET\\Kidzplayground\\Kidzplayground\\wwwroot\\userImages\\96422skrot.jpg",
-      "PackagePath": "staticwebassets\\userImages\\96422skrot.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Archie\\OneDrive\\Systemutveckling.NET\\Systemutveckling.NET\\Kidzplayground\\Kidzplayground\\wwwroot\\userImages\\96643playground-1051219_1280.jpg",
-      "PackagePath": "staticwebassets\\userImages\\96643playground-1051219_1280.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Archie\\OneDrive\\Systemutveckling.NET\\Systemutveckling.NET\\Kidzplayground\\Kidzplayground\\wwwroot\\userImages\\9806playground-99509_1280.jpg",
-      "PackagePath": "staticwebassets\\userImages\\9806playground-99509_1280.jpg"
-    },
-    {
       "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.Kidzplayground.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

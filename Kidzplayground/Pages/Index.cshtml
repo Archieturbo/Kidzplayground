@@ -12,11 +12,12 @@
 
 @if (Model.CategoryId == null || Model.CategoryId == 0)
 {
-    <div>
-        <h1>Välkommen till Kidzplayground</h1>
+    <div class="caption">
+        <h1>Välkommen till Kidzplayground!</h1>
+        <h3>Det ultimata forumet för diskussioner om lekplatser över hela Sverige</h3>
     </div>
 }
-<div>
+<div class="category-selector">
     <select onchange="location.href = this.value;">
         <option value="/Index">-- Välj kategori --</option>
         <option value="/Index?categoryId=0">Alla inlägg</option>

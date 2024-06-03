@@ -9,7 +9,8 @@ html {
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 html {
@@ -18,6 +19,7 @@ html {
 }
 
 body {
+    background-color:#d0e0ee;
   margin-bottom: 60px;
 }
 
@@ -83,3 +85,60 @@ body {
         color: gray;
         text-decoration: underline;
     }
+
+
+.caption {
+    background-color:rgb(250, 242, 242); 
+    color: #343a40; 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.category-selector select {
+    border: none;
+    background-color: rgb(250, 242, 242);
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    max-width: 200px;
+    margin: 10px;
+}
+
+/* Styling för korten */
+.card {
+    background-color: rgb(250, 242, 242);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+    .card:hover {
+        transform: translateY(-10px); /* Lyft kortet vid hover */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Förstärk skuggan vid hover */
+    }
+
+.card-img-top {
+    border-radius: 15px 15px;
+    max-height: 200px;
+    object-fit: cover; /* Anpassa bildstorlek */
+    border: 3px solid white; /* Lägg till en 3px solid vit ram runt bilden */
+    margin-bottom: -10px;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.card-footer {
+    background-color: rgb(217, 217, 217);
+    font-size: 0.8rem;
+    color: black;
+    border-top: none;
+    text-align: center;
+    padding: 10px;
+}
